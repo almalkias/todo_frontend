@@ -39,7 +39,7 @@ export default function Header() {
                 {/* Dropdown Menu */}
                 <div
                     className={`${isMenuOpen ? "flex" : "hidden"
-                        } absolute w-full shadow-lg flex-col p-3 text-center rounded-xl bg-[#fcfcfc] top-[53px] gap-3 lg:gap-6 lg:static lg:flex lg:flex-row lg:shadow-none lg:bg-transparent lg:w-auto lg:p-0 lg:text-white lg:font-bold`}>
+                        } absolute w-full shadow-lg flex-col p-3 text-center rounded-xl bg-[#fcfcfc] top-[53px] gap-3 lg:gap-6 lg:static lg:flex lg:flex-row lg:shadow-none lg:bg-transparent lg:w-auto lg:p-0 lg:text-black lg:font-bold`}>
                     {authToken ? (
                         <>
                             <Link to="/profile" onClick={() => setIsMenuOpen(!isMenuOpen)}>
