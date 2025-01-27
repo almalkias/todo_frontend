@@ -13,8 +13,7 @@ export default function TodoPage() {
     const [isAddListModalOpen, setIsAddListModalOpen] = useState(false);
     const { authToken } = useContext(AuthContext);
 
-    console.log('categories', categories)
-
+    
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -87,7 +86,7 @@ export default function TodoPage() {
 
 
     return (
-        <div className="container mx-auto p-4 mt-8">
+        <div className="container mx-auto p-4 pt-28">
             {categories.map((category) => (
                 <TodoList
                     key={category.id}

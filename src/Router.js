@@ -8,6 +8,7 @@ import PasswordForget from "./components/auth/PasswordForget";
 import PasswordReset from "./components/auth/PasswordReset";
 import AccountActivate from "./components/auth/AccountActivate";
 import TodoPage from "./components/pages/TodoPage";
+import UserProfile from "./components/UserProfile";
 
 const Router = () => {
     const location = useLocation();
@@ -24,6 +25,7 @@ const Router = () => {
                 <Route path="/password/reset/confirm/:uid/:token" element={<PasswordReset />} />
                 <Route path="/activate/:uid/:token" element={<AccountActivate />} />
                 <Route path="/todos" element={<TodoPage />} />
+                <Route path="/profile" element={<UserProfile />} />
             </Routes>
         </div>
     );
