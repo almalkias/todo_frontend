@@ -19,7 +19,7 @@ export default function AccountActivate() {
     }, [uid, token]);
 
     return (
-        <div className="flex flex-col items-center text-black text-2xl text-center mt-10">
+        <div className="flex flex-col items-center text-black text-2xl text-center pt-28">
             <h1>Now your account activated. You can login and use website</h1>
             <Link className='border-2 border-black border-solid p-2 rounded-md mt-5' to='/login'>Log in</Link>
         </div>
